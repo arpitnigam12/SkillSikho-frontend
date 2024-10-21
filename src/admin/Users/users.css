@@ -1,0 +1,104 @@
+.users {
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 1200px; /* Limits the width on larger screens */
+    margin-left: 40%; /* Shifted to the right by adjusting left margin */
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow-x: auto; /* For horizontal scroll on smaller screens */
+  }
+  
+  .users h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Table styling */
+  .users table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .users table thead {
+    background-color: #0b01c9; /* Deep blue for the header */
+    color: white;
+  }
+  
+  .users table thead td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .users table tbody tr:nth-child(even) {
+    background-color: #f1f1f1; /* Alternating row colors */
+  }
+  
+  .users table tbody tr:hover {
+    background-color: #d0d0ff; /* Highlight on hover */
+  }
+  
+  .users table td {
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  
+  /* Button styling */
+  .common-btn {
+    padding: 8px 15px;
+    background-color: #0b01c9; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .common-btn:hover {
+    background-color: #080099; /* Darker shade on hover */
+  }
+  
+  .common-btn:active {
+    transform: scale(0.98); /* Slight shrinking effect on click */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .users {
+      width: 100%;
+      margin-left: 5%; /* Reduced left margin for smaller screens */
+      padding: 15px;
+    }
+  
+    .users h1 {
+      font-size: 1.5rem;
+    }
+  
+    .users table {
+      width: 100%;
+      font-size: 0.85rem;
+    }
+  
+    .users table thead td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .users table tbody td {
+      padding: 10px;
+      font-size: 0.85rem;
+    }
+  
+    .common-btn {
+      padding: 7px 10px;
+      font-size: 0.85rem;
+    }
+  }

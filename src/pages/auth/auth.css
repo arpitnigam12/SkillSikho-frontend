@@ -1,0 +1,68 @@
+.auth-page {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: 85vh; /* Full viewport height */
+}
+
+.auth-form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Soft shadow for a 3D effect */
+    padding: 40px 30px; /* Padding around the form */
+    width: 400px; /* Fixed width for the form */
+    position: relative; /* Positioning context for pseudo-elements */
+    transition: transform 0.3s ease; /* Transition for the form itself */
+}
+
+.auth-form h1 {
+    text-align: center;
+    color: #1e3c72; /* Dark blue color for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.2rem; /* Larger heading */
+}
+
+label {
+    display: block; /* Labels occupy the full width */
+    margin: 10px 0 5px; /* Margin for spacing */
+    font-weight: 600; /* Bold labels for emphasis */
+    color: #555; /* Subtle color for readability */
+}
+
+input {
+    width: 94%; /* Full width of the form */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid #1e3c72; /* Border color to match the theme */
+    border-radius: 10px; /* Slightly rounded corners */
+    margin-bottom: 20px; /* Space between inputs */
+    font-size: 1rem; /* Font size for input text */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+}
+
+input:focus {
+    border-color: #4305ff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(67, 5, 255, 0.5); /* Add a shadow effect on focus */
+}
+
+input:hover {
+    border-color: #4305ff; /* Change border color on hover */
+}
+
+.auth-form p {
+    text-align: center; /* Center-align the text */
+    color: #777; /* Light gray color for the text */
+}
+
+.auth-form a {
+    color: #4305ff; /* Link color to match the theme */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight for links */
+}
+
+.auth-form a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button styles */
+

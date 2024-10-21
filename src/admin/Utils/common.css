@@ -1,0 +1,102 @@
+.sidebar {
+    width: 200px;
+    height: 100%;
+    left: 0;
+    background-color: #1e3a8a; /* Deep blue background */
+    color: white;
+    border-right: 1px solid #3b82f6; /* Light blue border */
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+  
+    @media (max-width: 768px) {
+      width: 50px; /* Adjusted for better visibility */
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 15px;
+        cursor: pointer;
+        padding: 15px;
+        transition: background-color 0.3s ease, padding 0.3s ease;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+  
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
+  
+        &:hover {
+          background-color: #3b82f6; /* Hover with light blue */
+          color: white;
+        }
+  
+        a {
+          display: flex;
+          text-decoration: none;
+          color: white; /* Make sure text stays white */
+          transition: color 0.3s ease;
+  
+          span {
+            margin-left: 15px;
+            font-weight: 500;
+  
+            @media (max-width: 768px) {
+              display: none; /* Hide text on small screens */
+            }
+          }
+        }
+  
+        i {
+          font-size: 18px;
+          transition: transform 0.3s ease;
+        }
+  
+        &:hover i {
+          transform: scale(1.2); /* Slight zoom on hover for icons */
+        }
+      }
+    }
+  }
+  
+  .dashboard-admin {
+    display: flex;
+    min-height: 80vh;
+    margin-top: 20px;
+    background-color: #ffffff; /* Light blue background for the dashboard */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-content {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+  
+    .box {
+      background-color: #1e40af; /* Blue box background */
+      color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #2563eb; /* Slightly brighter blue on hover */
+      }
+  
+      p {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
+  

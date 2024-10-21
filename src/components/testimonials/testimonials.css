@@ -1,0 +1,129 @@
+/* Background styling */
+.testimonials {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/* Apply the blurred background image using ::before */
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ytimg.com/vi/fSZUgE44b6E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGD8gRCh_MA8=&rs=AOn4CLAPGgoJRfD9zYMPLXimJvFuH7E6Tg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    filter: blur(2px); /* Blur effect */
+    z-index: -1; /* Ensure the background stays behind all content */
+}
+
+/* Foreground content should be visible clearly above the blurred background */
+.testimonials h2 {
+    font-size: 3rem; /* Large font size for heading */
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.testimonials-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    z-index: 2;
+}
+
+/* Individual testimonial card */
+.testimonials-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for contrast */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px; /* Fixed width for larger screens */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for cards */
+.testimonials-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+}
+
+/* Student image styles */
+.student-image img {
+    border-radius: 50%; /* Circular image */
+    width: 80px; /* Image size */
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px; /* Space below image */
+}
+
+/* Message styles */
+.message {
+    font-size: 1rem; /* Default font size */
+    color: #333;
+    margin-bottom: 10px; /* Space below message */
+}
+
+/* Name and position styles */
+.info .name {
+    font-weight: bold;
+    color: #222; /* Name color */
+    font-size: 1.1rem; /* Name font size */
+}
+
+.info .position {
+    color: #666; /* Position color */
+    font-size: 0.9rem; /* Position font size */
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+    .testimonials {
+        height: auto; /* Allow height to adjust */
+        padding: 5px; /* Padding adjustment */
+    }
+
+    .testimonials h2 {
+        font-size: 2rem; /* Smaller font size for heading */
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    .testimonials-cards {
+        display: grid; /* Use CSS grid for better control */
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+        gap: 15px; /* Adjust the gap between boxes */
+        justify-items: center; /* Center the cards horizontally */
+    }
+
+    .testimonials-card {
+        width: 70%; /* Full width for cards on mobile */
+        padding: 15px; /* Reduced padding */
+    }
+
+    .student-image img {
+        width: 50px; /* Smaller image size */
+        height: 50px;
+        margin-bottom: 10px; /* Reduced space below image */
+    }
+
+    .message {
+        font-size: 0.9rem; /* Slightly reduce font size for the message */
+    }
+
+    .info .name {
+        font-size: 1rem; /* Adjust the name font size */
+    }
+
+    .info .position {
+        font-size: 0.8rem; /* Adjust the position font size */
+    }
+}

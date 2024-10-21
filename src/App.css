@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Arial', sans-serif;
+  
+
+}
+
+
+.common-btn {
+  display: block; /* Change to block for full width alignment */
+  width: 90%; /* Full width to center it in the form */
+  background: #4305ff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 0; /* Adjust padding for vertical centering */
+  font-size: 1rem; /* Font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 15px rgba(67, 5, 255, 0.3); /* Shadow for a 3D effect */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  margin-top: 20px; /* Space above the button */
+}
+
+.common-btn:hover {
+  background: #3503c8; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 20px rgba(67, 5, 255, 0.4); /* Enhance shadow on hover */
+}
+
+.common-btn:active {
+  transform: translateY(0); /* Button pressed effect */
+  box-shadow: 0 4px 15px rgba(67, 5, 255, 0.2); /* Reduce shadow when pressed */
+}
+
+@media(max-width: 768px){
+  .common-btn {
+      width: 100%; /* Ensure full width on mobile */
+      padding: 12px 0; /* Adjust padding for mobile view */
+      font-size: 16px; /* Smaller font size for mobile view */
+  }
+}

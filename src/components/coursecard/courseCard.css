@@ -1,0 +1,98 @@
+.course-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #eaeaea; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Padding inside the card */
+    text-align: center; /* Center text alignment */
+    margin: 15px; /* Space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow on hover */
+    position: relative; /* For pseudo-elements if needed */
+    overflow: hidden; /* To contain pseudo-elements */
+    max-width: 250px; /* Fixed maximum width for cards */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    animation: fadeIn 1s ease forwards; /* Add fade-in effect */
+}
+
+.course-card:hover {
+    transform: translateY(-5px) scale(1.05); /* Slight upward movement and scaling on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Reduced glow effect */
+}
+
+.course-image {
+    width: 100%; /* Full width image */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover image without distortion */
+    border-radius: 8px; /* Round image corners */
+    transition: transform 0.2s ease; /* Smooth image scaling on hover */
+}
+
+.course-card:hover .course-image {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+h3 {
+    font-size: 1.4rem; /* Adjusted heading size */
+    margin: 10px 0; /* Margin around the heading */
+}
+
+p {
+    font-size: 0.8rem; /* Smaller paragraph size */
+    margin: 5px 0; /* Margin around paragraphs */
+}
+
+.course-btn,
+.common-btn { /* Combine styles for both buttons */
+    background-color: #0400ff; /* Primary button color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    padding: 8px 12px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transition for button */
+    font-size: 0.9rem; /* Button font size */
+    margin: 5px; /* Small margin for spacing */
+}
+
+.course-btn:hover,
+.common-btn:hover {
+    background-color: #0099ff; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Style for button container to align buttons side by side */
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center align buttons */
+    gap: 10px; /* Small gap between buttons */
+}
+
+/* Media query for max width 768px */
+@media (max-width: 768px) {
+    .course-card {
+        max-width: 90%; /* Use more width on smaller screens */
+        margin: 10px auto; /* Center card on smaller screens */
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 0.75rem; /* Adjust paragraph size */
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}

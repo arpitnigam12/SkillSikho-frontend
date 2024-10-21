@@ -1,0 +1,38 @@
+.courses {
+    position: relative; /* Positioning context for the pseudo-element */
+    padding: 80px 0; /* Top and bottom padding */
+    text-align: center; /* Center text alignment */
+    min-height: 60vh; /* Minimum height */
+    overflow: hidden; /* Hide overflow from the pseudo-element */
+}
+
+.courses::before {
+    content: ""; /* Necessary for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    background-image: url('https://i.ytimg.com/vi/fSZUgE44b6E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGD8gRCh_MA8=&rs=AOn4CLAPGgoJRfD9zYMPLXimJvFuH7E6Tg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    filter: blur(2px); /* Blur effect */
+    z-index: 1; /* Layering the background behind the text */
+}
+
+.courses h2 {
+    font-size: 32px; /* Heading size */
+    color: #ffffff; /* Heading color */
+    margin-bottom: 30px; /* Margin below heading */
+    position: relative; /* Positioning context for z-index */
+    z-index: 2; /* Bring the heading above the blurred background */
+}
+
+.course-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of flex items */
+    justify-content: center; /* Center the items */
+    gap: 30px; /* Space between items */
+    position: relative; /* Positioning context for z-index */
+    z-index: 2; /* Bring the container above the blurred background */
+}

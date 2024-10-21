@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Account Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; /* Full viewport height */
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                url('https://i.ytimg.com/vi/fSZUgE44b6E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGD8gRCh_MA8=&rs=AOn4CLAPGgoJRfD9zYMPLXimJvFuH7E6Tg') no-repeat center center; 
+    background-size: cover; /* Cover the entire area */
+}
+
+/* Profile Content Styles */
+.profile-info {
+    background: rgba(255, 255, 255, 0.211); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    color: #ffffff;
+    text-align: center; /* Center-align text */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Headings and Paragraphs */
+.profile-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffdd57; /* Bright color for headings */
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+/* Button Styles */
+.dash-btn, .course-btn, .logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(0, 123, 255, 0.8); /* Button background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.dash-btn:hover, .course-btn:hover, .logout-btn:hover {
+    background: rgba(0, 123, 255, 1); /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.logout-btn {
+    background: red; /* Specific style for logout button */
+}
+
+.logout-btn:hover {
+    background: darkred; /* Darker shade on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-info {
+        padding: 20px;
+    }
+
+    .profile-info h2 {
+        font-size: 2rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    .dash-btn, .course-btn, .logout-btn {
+        width: 100%; /* Full width on mobile */
+        margin: 5px 0; /* Adjust margin */
+    }
+}
