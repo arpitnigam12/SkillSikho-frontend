@@ -29,4 +29,4 @@ const JobPortal = () => {
     );
 };
 
-export default JobPortal;
+export default Jobportal;
