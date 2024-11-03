@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './jobportal.css'; // Importing CSS for JobPortal
 
-const JobPortal = () => {
+const Jobportal = () => {
     const navigate = useNavigate();
 
     const handleFindJobClick = () => {
