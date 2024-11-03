@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
                 <div className="home-content">
                     <h1>Welcome to SkillSikho</h1>
-                    <p>By Career</p>
+                    <p>By Career Nexus</p>
                     <h3>Learn, Grow, Excel</h3>
                     <button onClick={handleGetStartedClick} className="home-btn">Get Started</button>
                 </div>
