@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "./home.css";
 import Testimonials from '../../components/testimonials/Testimonials';
 import { UserData } from '../../context/UserContext'; // Import UserData context
-import Jobportal from '../Jobportal/Jobportal'; // Ensure correct casing
+import JobPortal from '../Jobportal/JobPortal'; // Ensure correct casing
 
 const Home = () => {
     const navigate = useNavigate();
@@ -30,7 +30,7 @@ const Home = () => {
                     <button onClick={handleGetStartedClick} className="home-btn">Get Started</button>
                 </div>
             </div>
-            <Jobportal />
+            <JobPortal />
             <Testimonials />
         </div>
     );
