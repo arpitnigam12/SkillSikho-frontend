@@ -1,6 +1,4 @@
-/* home.css */
-
-.home {
+.jobportal {
     position: relative;
     height: 100vh; /* Full height */
     overflow: hidden; /* Prevent content overflow */
@@ -11,7 +9,7 @@
     color: white; /* White text color */
 }
 
-.home-background {
+.jobportal-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,24 +20,37 @@
     background-position: center; /* Center the background image */
     filter: blur(3px); /* Blur effect */
     z-index: 1; /* Send background behind content */
-    /* No blur effect */
 }
 
-.home-content {
-    position: relative; /* Position relative to home */
+.jobportal-content {
+    position: relative; /* Position relative to jobportal */
     z-index: 2; /* Bring content above background */
     padding: 20px; /* Add some padding */
 }
 
 h1 {
-    font-size: 4rem; /* Large font size for heading */
+    font-size: 3rem; /* Large font size for heading */
     margin: 7px; /* Remove default margin */
 }
 
+h3 {
+    font-size: 3rem; /* Large font size for heading */
 
+    margin: 10px 0; /* Margin around subtitle */
+}
 
-.home-btn {
-   
+.jobportal-image {
+    max-width: 50%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space around the image */
+}
+
+p {
+    font-size: rem; /* Font size for paragraph */
+    margin: 20px 0; /* Margin around paragraph */
+}
+
+.jobportal-btn {
     padding: 10px 25px; /* Button padding */
     margin-top: 20px; /* Margin above button */
     font-size: 1rem; /* Button font size */
@@ -51,7 +62,7 @@ h1 {
     transition: background-color 0.3s; /* Smooth background transition */
 }
 
-.home-btn:hover {
+.jobportal-btn:hover {
     background-color: #0056b3; /* Darker background on hover */
 }
 
@@ -61,11 +72,19 @@ h1 {
         font-size: 2rem; /* Smaller font size for heading */
     }
 
-    p {
-        font-size: 1.2rem; /* Smaller font size for paragraph */
+    h3 {
+        font-size: 1.5rem; /* Smaller font size for subtitle */
     }
 
-    .home-btn {
+    .jobportal-image {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller font size for paragraph */
+    }
+
+    .jobportal-btn {
         padding: 8px 16px; /* Adjust button padding */
         font-size: 0.9rem; /* Smaller font size for button */
     }

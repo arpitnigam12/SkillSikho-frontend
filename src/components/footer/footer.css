@@ -1,44 +1,84 @@
-/* footer.css */
-footer {
-    background:  rgb(20, 20, 20);    color: #fff; /* White text color */
-    padding: 20px 0; /* Spacing around the content */
-    text-align: center; /* Center align the content */
+.footer {
+    background: linear-gradient(to right, #2d2d2d, #1a1a1a); /* Gradient background */
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .footer-content {
-    max-width: 1200px; /* Limit the width */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 0 20px; /* Add padding on the sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.footer-content p {
-    font-size: 1rem; /* Adjust font size */
-    margin: 10px 0; /* Margin around the text */
+.brand-info, .contact-info, .social-links {
+    margin-bottom: 20px;
+}
+
+.brand-title {
+    font-size: 1.8rem;
+    color: #2400d6;
+    font-weight: bold;
+}
+
+.brand-description {
+    color: #a0a0a0;
+    max-width: 300px;
+}
+
+.contact-info h3, .social-links h4 {
+    color: #2f00ff;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.contact-info p, .footer-bottom p {
+    color: #d0d0d0;
 }
 
 .social-links {
-    margin-top: 10px; /* Space above social links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.social-links a {
-    color: #fff; /* White icons */
-    margin: 0 10px; /* Space between the icons */
-    font-size: 1.5rem; /* Icon size */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.8rem;
 }
 
-.social-links a:hover {
-    color: #007bff; /* Change icon color on hover */
+.social-icons a {
+    color: #a0a0a0;
+    transition: color 0.3s;
 }
 
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-   
-    .footer-content p {
-        font-size: 0.9rem; /* Slightly smaller text on mobile */
+.social-icons a:hover {
+    color: #0800ff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #7d7d7d;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
     }
-
-    .social-links a {
-        font-size: 1.3rem; /* Adjust icon size for mobile */
+    .social-links {
+        align-items: flex-start;
     }
 }

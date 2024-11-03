@@ -21,7 +21,7 @@
     background-image: url('https://i.ytimg.com/vi/fSZUgE44b6E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGD8gRCh_MA8=&rs=AOn4CLAPGgoJRfD9zYMPLXimJvFuH7E6Tg');
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the background image */
-    filter: blur(2px); /* Blur effect */
+    filter: blur(3px); /* Blur effect */
     z-index: -1; /* Ensure the background stays behind all content */
 }
 

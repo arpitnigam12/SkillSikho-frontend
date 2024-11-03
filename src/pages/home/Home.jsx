@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "./home.css";
 import Testimonials from '../../components/testimonials/Testimonials';
 import { UserData } from '../../context/UserContext'; // Import UserData context
+import JobPortal from '../Jobportal/Jobportal';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -24,12 +25,14 @@ const Home = () => {
                 </div>
                 <div className="home-content">
                     <h1>Welcome to SkillSikho</h1>
+                    <p>By Career Nexus</p>
                     <h3>Learn, Grow, Excel</h3>
                     <button onClick={handleGetStartedClick} className="home-btn">Get Started</button>
                 </div>
             </div>
-        
+        <JobPortal/>
             <Testimonials />
+
         </div>
     );
 }
