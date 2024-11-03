@@ -1,7 +1,7 @@
 import React from 'react';
 import './jobportal.css'; // Importing CSS for JobPortal
 
-const Jobportal = () => {
+const JobPortal = () => {
     const handleFindJobClick = () => {
         window.open("https://career-nexus-platform.vercel.app/", "_blank"); // Open job portal in a new tab
     };
@@ -25,4 +25,4 @@ const Jobportal = () => {
     );
 };
 
-export default Jobportal;
+export default JobPortal;
