@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "./home.css";
 import Testimonials from '../../components/testimonials/Testimonials';
 import { UserData } from '../../context/UserContext'; // Import UserData context
-import Jobportal from '../Jobportal/Jobportal';
+import Jobportal from '../Jobportal/Jobportal'; // Ensure correct casing
 
 const Home = () => {
     const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Home = () => {
         <div>
             <div className="home">
                 <div className="home-background">
-                    {/* You can add background styles here */}
+                    {/* Background styles can be added here */}
                 </div>
                 <div className="home-content">
                     <h1>Welcome to SkillSikho</h1>
@@ -30,9 +30,8 @@ const Home = () => {
                     <button onClick={handleGetStartedClick} className="home-btn">Get Started</button>
                 </div>
             </div>
-        <Jobportal/>
+            <Jobportal />
             <Testimonials />
-
         </div>
     );
 }
